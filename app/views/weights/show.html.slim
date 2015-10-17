@@ -1,0 +1,7 @@
+p= @weight.reading
+p= @weight.created_at.strftime("%A %d %b %Y")
+
+= link_to "All Weights", weights_path, class: "btn btn-default"
+= link_to "Edit", edit_weight_path(@weight), class: "btn btn-default"
+= link_to "Delete", weight_path(@weight), method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default"
+

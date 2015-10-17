@@ -1,1 +1,3 @@
-h2 _form.html.slim
+= simple_form_for @weight do |f|
+  = f.input :reading
+  = f.button :submit, class: "btn btn-default"
