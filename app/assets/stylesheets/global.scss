@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
+$white: #FFFFFF;
+
+$mine-shaft: #292929;
+$lima: #6BCB0A;
+
+.navbar-default {
+  background-color: $mine-shaft;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+}
+
+.navbar-brand span {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.navbar-brand span:first-child {
+  color: $lima;
+}
+
+.navbar-brand span:nth-child(2) {
+  color: $white;
+}
