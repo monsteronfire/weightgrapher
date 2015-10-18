@@ -10,13 +10,10 @@ html
     nav.navbar.navbar-default
       .container
         .navbar-brand
-          = link_to "", data: {target: root_path} do
+          = link_to root_path do
             span Weight
             span Grapher
           end
-
-        / .navbar-brand
-        /   = link_to "WeightGrapher", root_path
 
         - if user_signed_in?
           ul.nav.navbar-nav.navbar-right
