@@ -1,0 +1,26 @@
+$white: #FFFFFF;
+
+$mine-shaft: #292929;
+$lima: #6BCB0A;
+
+.signup-wrapper {
+  height: 95%;
+  background-image: url('runner.jpeg');
+  background-size: cover;
+  background-position: 0% 75%;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.signup-wrapper h2 {
+  color: $white;
+  text-align: center;
+}
+
+.signup-wrapper .form-inputs label {
+  color: $white;
+}

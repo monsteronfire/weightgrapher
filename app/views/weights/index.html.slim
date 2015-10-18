@@ -1,9 +1,9 @@
-- @weights.each do |weight|
+/- @weights.each do |weight|
   / h2= link_to weight.reading, weight
   / p= weight.created_at.strftime("%A %d %b %Y")
   / p= weight.reading
-
-- if user_signed_in?
-  = link_to "Add New Weight", new_weight_path, class: "btn btn-default"
-  // div#weightgraph
-  = content_tag :div, "", class: "weightgraph", id: "weightgraph", data: {weights: @weights}
+.container.weight-wrapper
+  - if user_signed_in?
+    = link_to "Add New Weight", new_weight_path, class: "btn btn-default"
+    // div#weightgraph
+    = content_tag :div, "", class: "weightgraph", id: "weightgraph", data: {weights: @weights}
