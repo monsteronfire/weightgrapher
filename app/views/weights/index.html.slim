@@ -6,4 +6,4 @@
 - if user_signed_in?
   = link_to "Add New Weight", new_weight_path, class: "btn btn-default"
   // div#weightgraph
-  = content_tag :div, "", id: "weightgraph", data: {weights: @weights}
+  = content_tag :div, "", class: "weightgraph", id: "weightgraph", data: {weights: @weights}

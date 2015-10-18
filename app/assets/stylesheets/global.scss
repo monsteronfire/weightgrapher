@@ -5,6 +5,19 @@ $white: #FFFFFF;
 $mine-shaft: #292929;
 $lima: #6BCB0A;
 
+.btn-default,
+.btn-default:hover {
+  color: $white;
+}
+
+.btn-default {
+  background-color: $lima;
+}
+
+.btn-default:hover {
+  background-color: darken($lima, 5%);
+}
+
 .navbar-default {
   background-color: $mine-shaft;
 }
@@ -23,4 +36,17 @@ $lima: #6BCB0A;
 
 .navbar-brand span:nth-child(2) {
   color: $white;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:hover {
+  color: $white;
+}
+
+.weightgraph {
+  width: 100%;
+}
+
+.nav > li {
+  float: left;
 }
