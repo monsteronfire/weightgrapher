@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+
 $white: #FFFFFF;
 
 $mine-shaft: #292929;
 $lima: #6BCB0A;
 
-.signup-wrapper {
+.signin-wrapper,
+.signup-wrapper,
+.welcome-wrapper {
   height: 95%;
-  background-image: url('runner.jpeg');
   background-size: cover;
   background-position: 0% 75%;
   display: -webkit-flex;
@@ -16,11 +19,45 @@ $lima: #6BCB0A;
   align-items: center;
 }
 
+.signin-wrapper {
+  background-image: url('runner.jpeg');
+}
+
+.signup-wrapper {
+  background-image: url('jumper.jpeg');
+}
+
+.welcome-wrapper {
+  background-image: url('starsatnight.jpeg');
+}
+
+.signin-wrapper h2,
 .signup-wrapper h2 {
-  color: $white;
   text-align: center;
 }
 
-.signup-wrapper .form-inputs label {
+.signin-wrapper h2,
+.welcome-wrapper h2 {
   color: $white;
+}
+
+.signin-wrapper .form-inputs label {
+  color: $white;
+}
+
+.signup-wrapper .form-inputs label {
+  color: $lima;
+}
+
+.signup-wrapper .help-block {
+  color: $white;
+}
+
+.welcome-wrapper h2,
+.welcome-wrapper h4 {
+  text-align: center;
+}
+
+.welcome-wrapper h4 {
+  color: lighten(grey, 10%);
 }
